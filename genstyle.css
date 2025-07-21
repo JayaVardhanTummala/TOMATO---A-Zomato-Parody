@@ -1,0 +1,297 @@
+/* Apply a better font and basic styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f8f8;
+    /* A light grey background for the main content area */
+}
+
+/* ===== HERO SECTION STYLING ===== */
+.hero-section {
+    height: 90vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.269), rgba(0, 0, 0, 0.499)), url(https://images.pexels.com/photos/9634233/pexels-photo-9634233.jpeg);
+    background-size: cover;
+    object-fit: cover;
+    transform: none;
+    opacity: 1;
+    will-change: transform;
+    transition: opacity 0.25s, transform 0.25s;
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ===== NAVIGATION STYLING ===== */
+.nav .nav-link {
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 400;
+    position: relative;
+    top: 20px;
+}
+
+.nav .nav-link:hover {
+    color: #f8f9fa;
+}
+
+/* ===== HERO CONTENT STYLING ===== */
+.hero-content {
+    margin: auto;
+
+}
+
+.zomato-logo {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 6rem;
+    margin-bottom: 1rem;
+    position: relative;
+    top: 250px;
+}
+
+.hero-text {
+    font-size: 2.25rem;
+    font-weight: 400;
+    position: relative;
+    top: 250px;
+}
+
+/* ===== CAROUSEL STYLING ===== */
+.carousel-item img {
+    height: 500px;
+    /* Give the carousel a fixed height */
+    object-fit: cover;
+    /* Prevents images from stretching */
+    border-radius: 15px;
+    /* Rounded corners for the images */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.757), rgba(0, 0, 0, 0.817));
+}
+
+.carousel-item {
+    position: relative;
+}
+
+/* Add this new rule to create the overlay */
+.carousel-item::before {
+    content: '';
+    /* Pseudo-elements must have a content property */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.271);
+    /* A 20% black overlay. Adjust the 0.2 to make it lighter or darker! */
+    border-radius: 15px;
+    /* Match the image's border-radius */
+    z-index: 1;
+    /* Puts the overlay above the image */
+}
+
+.carousel-caption {
+    /* ...your existing styles... */
+    z-index: 2;
+    /* Puts the caption on top of the overlay */
+}
+
+.carousel-caption {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+    padding: 1.5rem;
+    border-radius: 0 0 15px 15px;
+    /* Match image corners */
+}
+
+/* ===== VENDOR CARD STYLING ===== */
+.vendor-lists-container h3 {
+    font-weight: 500;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    color: #000000;
+}
+
+.vendor-list {
+    display: none;
+    /* Hide it by default */
+}
+
+.vendor-list.active {
+    display: block;
+    /* Show it ONLY if it also has the 'active' class */
+}
+
+.card {
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+.card-title {
+    font-weight: 500;
+}
+
+.card-text {
+    color: #696969;
+}
+.vendor-list p{
+    text-align: center;
+    font-size: large;
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 20px;
+}
+
+/* Footer CSS */
+footer {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.426), rgba(0, 0, 0, 0.42)), url(https://images.pexels.com/photos/31779541/pexels-photo-31779541.jpeg);
+    background-size: cover;
+    padding: 7rem 0;
+    padding-top: 7rem;
+    padding-right: 0px;
+    padding-bottom: 7rem;
+    padding-left: 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-logo-TOMATO a {
+    justify-content: center;
+    display: flex;
+    text-decoration: none;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 90px;
+    position: relative;
+    top: 42px;
+    right: -16px;
+    font-weight: 500;
+}
+
+.servicelist-TOMATO {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    top: 11px;
+    left: -7px;
+}
+
+.servicelist-TOMATO li {
+    text-decoration: none;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+.servicelist-TOMATO li:hover {
+    color: #f8f9fa;
+}
+
+.servicelist-TOMATO a {
+    color: white;
+    text-decoration: none;
+}
+
+.servicelist-TOMATO i {
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 20px;
+}
+
+/* .footer-logo-TOMATO i {
+    color: white;
+    font-size: 50px;
+    margin-right: 10px;
+} */
+h3 {
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.iconstar {
+    color: #f8f9fa;
+    font-size: 20px;
+    margin-right: 5px;
+    text-decoration: none;
+}
+
+.copyright {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    margin-top: 1rem;
+}
+
+.cr small {
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 12px;
+
+}
+
+.end-text h3 {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    position: relative;
+    left: 8px;
+    top: 20px;
+}
+
+.servicelist-TOMATO1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Poppins', sans-serif;
+    gap: 1rem;
+    position: relative;
+    top: 10px;
+    right: 5px;
+}
+
+.servicelist-TOMATO1 li {
+    text-decoration: none;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* .servicelist-TOMATO li:hover {
+    color: #f8f9fa;
+} */
+
+.servicelist-TOMATO1 a {
+    color: white;
+    text-decoration: none;
+}
+
+/* .servicelist-TOMATO i{
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 20px;
+} */
+
+
+
