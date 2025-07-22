@@ -8,7 +8,7 @@ body {
 /* ===== HERO SECTION STYLING ===== */
 .hero-section {
     height: 90vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.269), rgba(0, 0, 0, 0.499)), url(https://images.pexels.com/photos/9634233/pexels-photo-9634233.jpeg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.407), rgba(0, 0, 0, 0.743)), url(https://images.pexels.com/photos/26926398/pexels-photo-26926398.jpeg);
     background-size: cover;
     object-fit: cover;
     transform: none;
